@@ -38,6 +38,7 @@ void Game::setTax(double tax) {
     Game::tax = tax;
 }
 
+/* physical only methods: Interface segregation
 double Game::getItemWeight() const {
     return itemWeight;
 }
@@ -53,7 +54,7 @@ const std::string &Game::getProductDimensions() const {
 void Game::setProductDimensions(const std::string &productDimensions) {
     Game::productDimensions = productDimensions;
 }
-
+*/
 double Game::calculatePriceWithTax() {
     return getPrice() + (getPrice() * getTax());
 }
@@ -74,8 +75,8 @@ std::string Game::toString() {
     std::ostringstream output;
     output << std::fixed << std::setprecision(2);
     output << "Game Name: " << getName()
-           << "\nItem Weight: " << getItemWeight()
-           << "\nProduct Dimensions: " << getProductDimensions()
+//          << "\nItem Weight: " << getItemWeight()
+//          << "\nProduct Dimensions: " << getProductDimensions()
            << "\nPrice: $" << getPrice()
            << "\nPrice with Tax: $" << calculatePriceWithTax();
 
