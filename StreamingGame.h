@@ -3,7 +3,13 @@
 #include <sstream>
 #include "Game.h"
 
-class StreamingGame : Game {
+class StreamingGame :public Game {
+public:
+	StreamingGame();
+	StreamingGame(const std::string& name, double price, double tax);
+	virtual~StreamingGame();
+
+	std::string toString() const;
 };
 
 

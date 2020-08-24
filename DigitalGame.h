@@ -3,7 +3,16 @@
 #include <sstream>
 #include "Game.h"
 
-class DigitalGame : Game {
+//using namespace std;
+
+class DigitalGame : public Game {
+public:
+	DigitalGame();
+	DigitalGame(const std::string name, double price, double tax);
+	virtual ~DigitalGame();
+
+	std::string toString() const;
+
 };
 
 
