@@ -6,6 +6,8 @@
 #define LAB04_SOLID_GAME_H
 #include <sstream>
 
+//prueba visual
+
 class Game {
 public:
     Game();
