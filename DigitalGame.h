@@ -7,11 +7,14 @@
 
 class DigitalGame : public Game {
   private:
-  double tax;
+  double discount;
 public:
 	DigitalGame();
 	DigitalGame(const std::string name, double price, double tax);
 	virtual ~DigitalGame();
+  double getDiscount() const;
+  double calculatePriceWithTax() override;
+  std::string replaceTheProduct() const;
 
 	std::string toString() const;
 

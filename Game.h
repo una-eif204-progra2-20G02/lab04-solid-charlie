@@ -36,7 +36,7 @@ public:
 
     //void setProductDimensions(const std::string &productDimensions);
 
-    double calculatePriceWithTax();
+    virtual double calculatePriceWithTax();
 
     void save(const std::string &filename);
 

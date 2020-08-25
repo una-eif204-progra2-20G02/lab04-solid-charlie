@@ -11,7 +11,7 @@ public:
 	StreamingGame(const std::string& name, double price, double tax);
 	virtual~StreamingGame();
   const string &getCategory() const;
-
+  std::string replaceTheProduct() const;  
 	std::string toString() const;
 };
 

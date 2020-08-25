@@ -7,7 +7,7 @@ class PhysicalGame  : Game {
 public:
     PhysicalGame();
 
-    PhysicalGame(const std::string& name, double price, double itemWeight, const std::string& productDimensions);
+    PhysicalGame(const std::string& name, double price, double itemWeight, const std::string& productDimensions, double tax);
     
     double getItemWeight() const;
 

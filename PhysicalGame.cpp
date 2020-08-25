@@ -4,7 +4,7 @@ PhysicalGame::PhysicalGame()
 {
 }
 
-PhysicalGame::PhysicalGame(const std::string& name, double price, double itemWeight, const std::string& productDimensions) : Game(name, price)
+PhysicalGame::PhysicalGame(const std::string& name, double price, double itemWeight, const std::string& productDimensions, double tax) : Game(name, price, tax)
 {
     this->itemWeight = itemWeight;
     this->productDimensions = productDimensions;
