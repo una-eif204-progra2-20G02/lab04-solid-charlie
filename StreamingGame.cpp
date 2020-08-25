@@ -8,11 +8,16 @@ StreamingGame::StreamingGame(const std::string& name, double price, double tax)
 {
 }
 
-StreamingGame::~StreamingGame()
-{
+const string &StreamingGame::getCategory()const{
+  return category;
 }
+
+StreamingGame::~StreamingGame(){}
 
 std::string StreamingGame::toString() const
 {
-	return std::string();
+  std::stringstream s;
+  Game::toString();
+  s<<"Category"<<getCategory()<<endl;
+	return std::s.str();
 }
