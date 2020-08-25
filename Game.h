@@ -14,7 +14,7 @@ public:
 
     Game(const std::string &name, double price, double tax);
 
-    Game(const std::string &name, double price, double itemWeight, const std::string &productDimensions);
+    Game(const std::string &name, double price);
 
     const std::string &getName() const;
 
@@ -40,13 +40,11 @@ public:
 
     void save(const std::string &filename);
 
-    virtual std::string toString();
+    virtual std::string toString() = 0;
 private:
     std::string name;
     double price;
     double tax;
-    //  double itemWeight;
-    //  std::string productDimensions;
 };
 
 

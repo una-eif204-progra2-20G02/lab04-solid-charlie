@@ -6,6 +6,8 @@
 //using namespace std;
 
 class DigitalGame : public Game {
+  private:
+  double tax;
 public:
 	DigitalGame();
 	DigitalGame(const std::string name, double price, double tax);
