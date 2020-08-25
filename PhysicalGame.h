@@ -8,7 +8,14 @@ public:
     PhysicalGame();
 
     PhysicalGame(const std::string& name, double price, double itemWeight, const std::string& productDimensions);
+    
+    double getItemWeight() const;
 
+    void setItemWeight(double itemWeight);
+
+    const std::string &getProductDimensions() const;
+
+    void setProductDimensions(const std::string &productDimensions);
 
     std::string shipTheProduct() const;
 
